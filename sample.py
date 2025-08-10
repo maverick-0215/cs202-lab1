@@ -1,3 +1,5 @@
+"""this file conatins data structures that are used frequently in python"""
+
 from queue import Queue
 from collections import deque
 import heapq
@@ -29,3 +31,8 @@ heapq.heappush(heap, 2)
 heapq.heappush(heap,8)
 min_val = heapq.heappop(heap)
 print("Heap after push & pop:", heap, "Min popped:", min_val)
+
+q=Queue()
+[q.put(i) for i in range(5)]
+while not q.empty():
+    print(q.get())
